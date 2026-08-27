@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LMS Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+  <div class="brand">
+    <div class="brand-icon">L</div>
+    <div>
+      <strong>LMS Portal</strong>
+      <small>Internship Learning</small>
+    </div>
+  </div>
+
+  <nav class="side-nav">
+    <a href="dashboard.html" class="nav-link" id="nav-dashboard"><span>⌂</span> Dashboard</a>
+    <a href="learning-materials.html" class="nav-link" id="nav-materials"><span>▣</span> Learning Materials</a>
+    <a href="report.html" class="nav-link" id="nav-report"><span>✎</span> Daily Report</a>
+    <a href="certifications.html" class="nav-link" id="nav-certificates"><span>◇</span> Certifications</a>
+    <a href="settings.html" class="nav-link" id="nav-settings"><span>⚙</span> Settings</a>
+  </nav>
+
+  <div class="sidebar-bottom">
+    <button class="nav-link logout-link" id="logoutBtn"><span>↪</span> Logout</button>
+  </div>
+</aside>
+
+<main class="main">
+  <div class="topbar">
+    <div>
+      <div class="category">Account</div>
+      <h1 class="page-title">Settings</h1>
+      <p class="page-subtitle">Manage your profile and login activity</p>
+    </div>
+    <div class="user-chip">
+      <div class="avatar" data-avatar>U</div>
+      <div><strong data-user-name>User</strong><div class="small muted" data-user-email>user@example.com</div></div>
+    </div>
+  </div>
+  <section class="content">
+
+<div id="settingsMessage" class="message"></div>
+
+<div class="card">
+  <div class="profile-grid">
+    <div class="profile-photo-wrap">
+      <img id="profilePhoto" class="profile-photo" alt="Profile photo">
+      <br>
+      <label class="photo-label" for="photoInput">Change profile photo</label>
+      <input id="photoInput" type="file" accept="image/*" class="hidden">
+      <p class="small muted">JPG/PNG recommended</p>
+    </div>
+
+    <form id="profileForm">
+      <div class="section-head"><h2>Profile Information</h2><span class="badge">Account</span></div>
+      <div class="form-grid">
+        <div class="form-group"><label>Name</label><input id="name" class="form-control" required></div>
+        <div class="form-group"><label>Email</label><input id="email" class="form-control" disabled></div>
+      </div>
+      <div class="form-grid">
+        <div class="form-group"><label>Phone Number</label><input id="phone" class="form-control"></div>
+        <div class="form-group"><label>Address</label><input id="address" class="form-control"></div>
+      </div>
+      <div class="form-grid">
+        <div class="form-group"><label>Internship Start</label><input id="internship_start" type="date" class="form-control"></div>
+        <div class="form-group"><label>Internship End</label><input id="internship_end" type="date" class="form-control"></div>
+      </div>
+      <button class="primary-btn" type="submit">Save Changes</button>
+    </form>
+  </div>
+</div>
+
+<div class="card" style="margin-top:18px">
+  <div class="section-head"><h2>Login Activity</h2><span class="small muted">Last 20 activities</span></div>
+  <div id="activityList" class="activity-list"><div class="empty">Loading activity...</div></div>
+</div>
+
+  </section>
+<footer class="footer">
+  <span>© 2026 LMS Portal</span>
+  <span>Learn • Practice • Report • Grow</span>
+</footer>
+
+</main>
+</div>
+<script src="js/common.js"></script>
+<script src="js/settings.js"></script>
+</body>
+</html>

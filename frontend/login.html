@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LMS Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="auth-body">
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <div class="auth-logo">L</div>
+      <h1>Welcome Back</h1>
+      <p>Login to your Learning Management System</p>
+
+      <div id="loginMessage" class="message"></div>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input class="form-control" id="email" type="email" required placeholder="you@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input class="form-control" id="password" type="password" required placeholder="Enter password">
+        </div>
+
+        <button class="primary-btn full" type="submit">Login</button>
+      </form>
+
+      <div class="auth-switch">
+        Don't have an account?
+        <a href="signin.html">Sign in</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/common.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

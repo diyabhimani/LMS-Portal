@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LMS Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+  <div class="brand">
+    <div class="brand-icon">L</div>
+    <div>
+      <strong>LMS Portal</strong>
+      <small>Internship Learning</small>
+    </div>
+  </div>
+
+  <nav class="side-nav">
+    <a href="dashboard.html" class="nav-link" id="nav-dashboard"><span>⌂</span> Dashboard</a>
+    <a href="learning-materials.html" class="nav-link" id="nav-materials"><span>▣</span> Learning Materials</a>
+    <a href="report.html" class="nav-link" id="nav-report"><span>✎</span> Daily Report</a>
+    <a href="certifications.html" class="nav-link" id="nav-certificates"><span>◇</span> Certifications</a>
+    <a href="settings.html" class="nav-link" id="nav-settings"><span>⚙</span> Settings</a>
+  </nav>
+
+  <div class="sidebar-bottom">
+    <button class="nav-link logout-link" id="logoutBtn"><span>↪</span> Logout</button>
+  </div>
+</aside>
+
+<main class="main">
+  <div class="topbar">
+    <div>
+      <div class="category">Learning</div>
+      <h1 class="page-title">Learning Materials</h1>
+      <p class="page-subtitle">Videos, documents, presentations and practice assignments</p>
+    </div>
+    <div class="user-chip">
+      <div class="avatar" data-avatar>U</div>
+      <div><strong data-user-name>User</strong><div class="small muted" data-user-email>user@example.com</div></div>
+    </div>
+  </div>
+  <section class="content">
+
+<div class="material-tabs">
+  <button class="tab-btn active" data-tab="videos">Videos</button>
+  <button class="tab-btn" data-tab="documents">Documents</button>
+  <button class="tab-btn" data-tab="ppts">PPT</button>
+  <button class="tab-btn" data-tab="assignments">Assignments</button>
+</div>
+
+<div class="material-section active" id="videos">
+  <div class="video-grid">
+    <div class="card video-card"><div class="video-placeholder"><div class="video-thumb placeholder-thumb">▶</div></div><div class="video-body"><strong>Video 1 — HTML Basics</strong><p class="small muted">Introduction to semantic HTML.</p></div></div>
+    <div class="card video-card"><div class="video-placeholder"><div class="video-thumb placeholder-thumb">▶</div></div><div class="video-body"><strong>Video 2 — CSS Styling</strong><p class="small muted">Modern layouts and responsive design.</p></div></div>
+    <div class="card video-card"><div class="video-placeholder"><div class="video-thumb placeholder-thumb">▶</div></div><div class="video-body"><strong>Video 3 — JavaScript</strong><p class="small muted">DOM, events and dynamic pages.</p></div></div>
+    <div class="card video-card"><div class="video-placeholder"><div class="video-thumb placeholder-thumb">▶</div></div><div class="video-body"><strong>Video 4 — MySQL</strong><p class="small muted">Tables, queries and relationships.</p></div></div>
+    <div class="card video-card"><div class="video-placeholder"><div class="video-thumb placeholder-thumb">▶</div></div><div class="video-body"><strong>Video 5 — Node.js</strong><p class="small muted">Build APIs with Express.</p></div></div>
+    <div class="card video-card"><div class="video-placeholder"><div class="video-thumb placeholder-thumb">▶</div></div><div class="video-body"><strong>Video 6 — Git & GitHub</strong><p class="small muted">Version control fundamentals.</p></div></div>
+  </div>
+</div>
+
+<div class="material-section" id="documents">
+  <div class="card">
+    <div class="section-head"><h2>Documents</h2><span class="badge">.doc</span></div>
+    <div class="doc-list">
+      <div class="doc-item"><div><strong>HTML Basics.doc</strong><div class="small muted">HTML structure and semantic tags</div></div><a class="secondary-btn" href="materials/documents/HTML-Basics.doc" download>Download</a></div>
+      <div class="doc-item"><div><strong>CSS Guide.doc</strong><div class="small muted">Selectors, layout and responsive CSS</div></div><a class="secondary-btn" href="materials/documents/CSS-Guide.doc" download>Download</a></div>
+      <div class="doc-item"><div><strong>JavaScript Practice.doc</strong><div class="small muted">DOM and JavaScript exercises</div></div><a class="secondary-btn" href="materials/documents/JavaScript-Practice.doc" download>Download</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="material-section" id="ppts">
+  <div class="card">
+    <div class="section-head"><h2>Presentation Files</h2><span class="badge">PPT</span></div>
+    <div class="doc-list">
+      <div class="doc-item"><div><strong>Web Development PPT</strong><div class="small muted">Frontend development overview</div></div><a class="secondary-btn" href="materials/ppts/Web-Development-PPT.ppt" download>Download</a></div>
+      <div class="doc-item"><div><strong>Database PPT</strong><div class="small muted">MySQL database fundamentals</div></div><a class="secondary-btn" href="materials/ppts/Database-PPT.ppt" download>Download</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="material-section" id="assignments">
+  <div class="card">
+    <div class="section-head"><h2>Practice Assignments</h2><span class="badge">Practice</span></div>
+    <div class="assignment-list">
+      <div class="assignment-item"><div><strong>Assignment 1</strong><div class="small muted">Create a semantic HTML portfolio page.</div></div><span class="badge">HTML</span></div>
+      <div class="assignment-item"><div><strong>Assignment 2</strong><div class="small muted">Build a responsive login form using CSS.</div></div><span class="badge">CSS</span></div>
+      <div class="assignment-item"><div><strong>Assignment 3</strong><div class="small muted">Create a JavaScript todo list with add/remove.</div></div><span class="badge">JS</span></div>
+      <div class="assignment-item"><div><strong>Assignment 4</strong><div class="small muted">Create a MySQL users table and write CRUD queries.</div></div><span class="badge">MySQL</span></div>
+      <div class="assignment-item"><div><strong>Assignment 5</strong><div class="small muted">Build an Express API connected to MySQL.</div></div><span class="badge">Node.js</span></div>
+    </div>
+  </div>
+</div>
+
+  </section>
+<footer class="footer">
+  <span>© 2026 LMS Portal</span>
+  <span>Learn • Practice • Report • Grow</span>
+</footer>
+
+</main>
+</div>
+<script src="js/common.js"></script>
+<script src="js/materials.js"></script>
+</body>
+</html>

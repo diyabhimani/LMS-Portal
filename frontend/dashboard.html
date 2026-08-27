@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LMS Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+  <div class="brand">
+    <div class="brand-icon">L</div>
+    <div>
+      <strong>LMS Portal</strong>
+      <small>Internship Learning</small>
+    </div>
+  </div>
+
+  <nav class="side-nav">
+    <a href="dashboard.html" class="nav-link" id="nav-dashboard"><span>⌂</span> Dashboard</a>
+    <a href="learning-materials.html" class="nav-link" id="nav-materials"><span>▣</span> Learning Materials</a>
+    <a href="report.html" class="nav-link" id="nav-report"><span>✎</span> Daily Report</a>
+    <a href="certifications.html" class="nav-link" id="nav-certificates"><span>◇</span> Certifications</a>
+    <a href="settings.html" class="nav-link" id="nav-settings"><span>⚙</span> Settings</a>
+  </nav>
+
+  <div class="sidebar-bottom">
+    <button class="nav-link logout-link" id="logoutBtn"><span>↪</span> Logout</button>
+  </div>
+</aside>
+
+<main class="main">
+  <div class="topbar">
+    <div>
+      <div class="category">Overview</div>
+      <h1 class="page-title">Dashboard</h1>
+      <p class="page-subtitle">Your internship learning dashboard</p>
+    </div>
+    <div class="user-chip">
+      <div class="avatar" data-avatar>U</div>
+      <div><strong data-user-name>User</strong><div class="small muted" data-user-email>user@example.com</div></div>
+    </div>
+  </div>
+  <section class="content">
+
+<div class="grid stats-grid">
+  <div class="card stat-card"><div class="stat-icon">📚</div><div><div class="muted small">Learning</div><div class="stat-value" id="materialCount">12</div><div class="small muted">Resources</div></div></div>
+  <div class="card stat-card"><div class="stat-icon">✎</div><div><div class="muted small">Reports</div><div class="stat-value" id="reportCount">0</div><div class="small muted">Daily entries</div></div></div>
+  <div class="card stat-card"><div class="stat-icon">◇</div><div><div class="muted small">Certificates</div><div class="stat-value" id="certCount">0</div><div class="small muted">Earned</div></div></div>
+  <div class="card stat-card"><div class="stat-icon">◷</div><div><div class="muted small">Internship</div><div class="stat-value" id="daysLeft">—</div><div class="small muted">Days left</div></div></div>
+</div>
+
+<div class="grid two-col" style="margin-top:18px">
+  <div class="card">
+    <div class="section-head"><h2>Internship Progress</h2><strong id="progressText">0%</strong></div>
+    <div class="progress"><div id="progressBar" style="width:0%"></div></div>
+    <p class="muted" id="internshipDates">Loading dates...</p>
+  </div>
+  <div class="card">
+    <div class="section-head"><h2>Quick Actions</h2></div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <a class="primary-btn" href="report.html">Add Daily Report</a>
+      <a class="secondary-btn" href="learning-materials.html">Open Materials</a>
+    </div>
+  </div>
+</div>
+
+<div class="card" style="margin-top:18px">
+  <div class="section-head"><h2>Best Features</h2><span class="badge">LMS Portal</span></div>
+  <div class="feature-grid">
+    <div class="feature-card"><div class="feature-icon">📝</div><h3>Smart Daily Reports</h3><p>Write daily work using headings, bold text, bullets and font sizes in a simple rich editor.</p></div>
+    <div class="feature-card"><div class="feature-icon">🎓</div><h3>Automatic Certification</h3><p>Certificate generation becomes available after internship completion and final report submission.</p></div>
+    <div class="feature-card"><div class="feature-icon">🔐</div><h3>Secure Login Activity</h3><p>Login and logout events are recorded in MySQL for account activity tracking.</p></div>
+  </div>
+</div>
+
+  </section>
+<footer class="footer">
+  <span>© 2026 LMS Portal</span>
+  <span>Learn • Practice • Report • Grow</span>
+</footer>
+
+</main>
+</div>
+<script src="js/common.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LMS Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+  <div class="brand">
+    <div class="brand-icon">L</div>
+    <div>
+      <strong>LMS Portal</strong>
+      <small>Internship Learning</small>
+    </div>
+  </div>
+
+  <nav class="side-nav">
+    <a href="dashboard.html" class="nav-link" id="nav-dashboard"><span>⌂</span> Dashboard</a>
+    <a href="learning-materials.html" class="nav-link" id="nav-materials"><span>▣</span> Learning Materials</a>
+    <a href="report.html" class="nav-link" id="nav-report"><span>✎</span> Daily Report</a>
+    <a href="certifications.html" class="nav-link" id="nav-certificates"><span>◇</span> Certifications</a>
+    <a href="settings.html" class="nav-link" id="nav-settings"><span>⚙</span> Settings</a>
+  </nav>
+
+  <div class="sidebar-bottom">
+    <button class="nav-link logout-link" id="logoutBtn"><span>↪</span> Logout</button>
+  </div>
+</aside>
+
+<main class="main">
+  <div class="topbar">
+    <div>
+      <div class="category">Internship Report</div>
+      <h1 class="page-title">Daily Report</h1>
+      <p class="page-subtitle">Record your daily work, tasks and learning</p>
+    </div>
+    <div class="user-chip">
+      <div class="avatar" data-avatar>U</div>
+      <div><strong data-user-name>User</strong><div class="small muted" data-user-email>user@example.com</div></div>
+    </div>
+  </div>
+  <section class="content">
+
+<div class="card">
+  <div class="section-head"><h2>Internship Duration</h2><span id="durationStatus" class="badge">Loading...</span></div>
+  <div class="form-grid">
+    <div><div class="small muted">Start date</div><strong id="startDate">—</strong></div>
+    <div><div class="small muted">End date</div><strong id="endDate">—</strong></div>
+  </div>
+  <p id="submitInfo" class="status-note" style="margin-bottom:0">Loading submission status...</p>
+</div>
+
+<div style="height:18px"></div>
+<div id="reportContainer"></div>
+
+<div class="card submit-bar">
+  <div class="report-actions">
+    <div>
+      <strong>Final Submission</strong>
+      <div class="status-note" id="finalStatus">You can save daily reports anytime during the internship.</div>
+    </div>
+    <button id="submitReportBtn" class="primary-btn" disabled>Submit Final Report</button>
+  </div>
+</div>
+
+  </section>
+<footer class="footer">
+  <span>© 2026 LMS Portal</span>
+  <span>Learn • Practice • Report • Grow</span>
+</footer>
+
+</main>
+</div>
+<script src="js/common.js"></script>
+<script src="js/report.js"></script>
+</body>
+</html>

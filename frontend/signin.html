@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LMS Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="auth-body">
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <div class="auth-logo">L</div>
+      <h1>Create Account</h1>
+      <p>Start your internship learning journey</p>
+
+      <div id="signupMessage" class="message"></div>
+
+      <form id="signupForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input class="form-control" id="name" required placeholder="Your full name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input class="form-control" id="email" type="email" required placeholder="you@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input class="form-control" id="password" type="password" minlength="6" required placeholder="Minimum 6 characters">
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input class="form-control" id="phone" placeholder="+91...">
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input class="form-control" id="address" placeholder="City, State">
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="internship_start">Internship Start</label>
+            <input class="form-control" id="internship_start" type="date" required>
+          </div>
+          <div class="form-group">
+            <label for="internship_end">Internship End</label>
+            <input class="form-control" id="internship_end" type="date" required>
+          </div>
+        </div>
+
+        <button class="primary-btn full" type="submit">Create Account</button>
+      </form>
+
+      <div class="auth-switch">
+        Already have an account?
+        <a href="login.html">Login</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/common.js"></script>
+<script src="js/signin.js"></script>
+</body>
+</html>
